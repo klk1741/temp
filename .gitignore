@@ -2,3 +2,21 @@
 *.class
 
 index.txt
+
+#확장자가 .a인파일 무시
+*.a
+
+#윗라인에 확장자가a인 파일은 무시했지만 lib.a는 무시하지않음
+!lib.a
+
+#현재 디렉토리에 있는 todo파일 무시, 하위 디렉토리있는 파일 무시x
+/TODO
+
+#build 디렉토리에 있는 모든 파일은 무시
+build/
+
+#doc폴더 아래에 모든 txt파일 무시(doc/server/test1.txt 파일은 무시x)
+doc/*.txt
+
+#doc폴더 아래의 모든 .pdf파일 무시(doc/server/1.pdf 무시)
+doc/**/*.pdf
