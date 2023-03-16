@@ -2,4 +2,5 @@ git
 git diff
 hotfix branch
 hotfix branch -d
+프로젝트 수정
 
